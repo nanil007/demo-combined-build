@@ -15,7 +15,7 @@ public class DemoCombinedBuildApplication {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "Test Done!!!!!";
+		return "Deployed to ACR";
 	}
 
 }
