@@ -12,13 +12,12 @@ spec:
       labels:
         app: gs-spring-boot-docker
     spec:
-      imagePullSecrets:
-      - name: acr-secret
       containers:
       - name: gs-spring-boot-docker
         image: kpkubetestconreg.azurecr.io/springdemo:1
         imagePullPolicy: Always
-      
+      imagePullSecrets:
+      - name: acr-secret
 ---
 apiVersion: v1
 kind: Service
