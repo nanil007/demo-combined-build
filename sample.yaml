@@ -21,7 +21,6 @@ kind: Service
 metadata:
   name: gs-spring-boot-docker1
 spec:
-  name: spring-boot
   type: NodePort
   ports:
   - port: 8080
