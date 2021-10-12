@@ -24,7 +24,7 @@ spec:
   type: NodePort
   ports:
   - port: 8080
-    targetPort: 8080
+    targetPort: 8085
     nodePort: 30025
   selector:
     app: gs-spring-boot-docker1
