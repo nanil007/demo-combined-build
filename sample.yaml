@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gs-spring-boot-docker
+  name: gs-spring-boot-docker1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gs-spring-boot-docker
+      app: gs-spring-boot-docker1
   template:
     metadata:
       labels:
-        app: gs-spring-boot-docker
+        app: gs-spring-boot-docker1
     spec:
       containers:
-      - name: gs-spring-boot-docker
+      - name: gs-spring-boot-docker1
         image: kpkubetestconreg.azurecr.io/kpkubetestconreg/springdemo:1
       imagePullSecrets:
       - name: acr-secret
@@ -21,10 +21,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: gs-spring-boot-docker
+  name: gs-spring-boot-docker1
 spec:
   ports:
   - port: 80
     targetPort: 8085
   selector:
-    app: gs-spring-boot-docker
+    app: gs-spring-boot-docker1
