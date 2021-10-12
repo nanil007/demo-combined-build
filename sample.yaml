@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gs-spring-boot-docker
-        image: kpkubetestconreg.azurecr.io/springdemo:1
+        image: kpkubetestconreg.azurecr.io/kpkubetestconreg/springdemo:1
       imagePullSecrets:
       - name: acr-secret
 ---
