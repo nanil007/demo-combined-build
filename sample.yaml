@@ -15,8 +15,6 @@ spec:
       containers:
       - name: gs-spring-boot-docker1
         image: kpkubetestconreg.azurecr.io/kpkubetestconreg/springdemo:1
-      imagePullSecrets:
-      - name: acr-secret
 ---
 apiVersion: v1
 kind: Service
