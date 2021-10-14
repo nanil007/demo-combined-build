@@ -40,7 +40,7 @@ spec:
   - http:	
       paths: 
       - path: /test
-        backend:
-          serviceName: gs-spring-boot-docker1
-          servicePort: 8080
+        spec.defaultBackend:
+          service.name: gs-spring-boot-docker1
+          service.port.number: 8080
 
