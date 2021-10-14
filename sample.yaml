@@ -39,7 +39,7 @@ spec:
   rules:
   - http:	
       paths: 
-      - path: /test
+      - path:
         backend:
           serviceName: gs-spring-boot-docker1
           servicePort: 8080
