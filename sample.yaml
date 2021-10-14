@@ -21,8 +21,11 @@ kind: Service
 metadata:
   name: gs-spring-boot-docker1
 spec:
-  ports:
-  - port: 8080
-    targetPort: 8085
   selector:
     app: gs-spring-boot-docker1
+  type: LoadBalancer
+  ports:
+    protocol: TCP
+    - port: 8080
+      targetPort: 8085
+      nodePort: 35100
