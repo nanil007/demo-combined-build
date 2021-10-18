@@ -28,7 +28,7 @@ spec:
   - port: 8080
     targetPort: 8085
 ---
-piVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: nodejs-gateway
