@@ -42,4 +42,4 @@ spec:
       - path:
         backend:
           serviceName: gs-spring-boot-docker1
-          servicePort: 8080
+          servicePort: 8085
